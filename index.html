@@ -89,6 +89,46 @@
 		<p>Si usted tiene algún problema y si los encuentra, quizá pueda contratarlos.</p>
 		<p>Ellos son <strong>El Equipo A</strong>.</p>
 	</section>
+	<section id="contacto">
+		<header>
+			<h2>Contacto</h2>
+		</header>
+		<form novalidate>
+			<div>
+				<label for="nombreId">Nombre:</label>
+				<input type="text" name="nombre" id="nombreId" placeholder="Nombre" required/>
+			</div>
+			<div>
+				<label for="emailId">Email:</label>
+				<input type="email" name="email" id="emailId" placeholder="email@company.com" required pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+"/>
+			</div>
+			<div>
+				<div>Tipo de misión</div>
+				<label>
+					<input type="radio" name="tipo_mision" value="Rescate" required> Rescate</input>
+				</label>
+				<label>
+					<input type="radio" name="tipo_mision" value="Ajuste de cuentas" required> Ajuste de cuentas</input>
+				</label>
+				<label>
+					<input type="radio" name="tipo_mision" value="Disparos y explosivos sin heridos" required> Disparos y explosivos sin heridos</input>
+				</label>
+				<label>
+					<input type="radio" name="tipo_mision" value="Disparos y explosivos con heridos de mentira" required> Disparos y explosivos con heridos de mentira</input>
+				</label>
+			</div>
+			<div>
+				<label for="ejercitoId">Tamaño del ejército enemigo: </label>
+				<input type="number" id="ejercitoId" name="ejercito" min="10" required/>
+			</div>
+			<div>
+				<label for="fechaId">Fecha de trabajo: </label>
+				<input type="date" id="fechaId" name="fecha" required/>
+			<div>
+				<button type="submit">Enviar</button>
+			</div>
+		</form>
+	</section>
 
 </body>
 </html>
