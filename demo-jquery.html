@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo de JavaScript</title>
+</head>
+<body>
+
+<div id="container" style="padding:20px;background:gold;">
+    <div id="counter">0</div>
+    <button id="start-button">Start</button>
+    <button id="pause-button" disabled>Pause</button>
+    <button id="stop-button" disabled>Stop</button>
+    <button id="reset-button">Reset</button>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
+
+<script>
+// evento ready que salta cuando todo el js se ha cargado
+$(document).ready( function() {
+
+	$("#container").on("click", function(evt) {
+		var counterValue = $("#counter").html();
+		console.log("counterValue before", counterValue);
+		counterValue = parseInt(counterValue);
+		counterValue++;
+		console.log("counterValue after", counterValue);
+		$("#counter").html(counterValue);
+	});
+
+	$("#reset-button").on("click", function(evt) {
+		console.log("Reset!");
+		$("#counter").html("0");
+		evt.stopPropagation();
+	});
+
+	var intervalID = null;
+
+	$("#start-button").on("click", function(evt) {
+		evt.stopPropagation();
+		if (intervalID == null) {
+			intervalID = setInterval(function() {
+				$("#container").click(); // simulamos el click
+			}, 500);
+			this.dsabled = true;
+			$("#pause-button, #stop-button").attr("disabled", false);
+		}
+	});
+
+	$("#pause-button").on("click", function(evt) {
+		evt.stopPropagation();
+		if (intervalID != null) {
+			clearInterval(intervalID);
+			intervalID = null;
+			$("#stop-button").attr("disabled", true);
+			$("#start-button").attr("disabled", false);
+		}
+	});
+
+	$("#stop-button").on("click", function(evt) {
+		evt.stopPropagation();
+		$("#pause-button, #reset-button").click();
+	});
+
+});
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+// defino la mixin para generar el grid
+.grid-generator(@columns, @device, @i:1) when (@i <= @columns) {
+
+	// @columns: num de columnas del grid
+	// @device: tipo de dispositivo
+	// @i: num de elementos del grid que ocupa
+
+	.col-@{device}-@{i} { 
+		width: ( 100% / @columns) * @i;
+		float: left;
+		display: inline-block;
+	}
+	.grid-generator(@columns, @device, (@i+1));
+
+}
+
+// genero el grid ejecutando el mixin
+.grid-generator(@grid-columns, phone);
+
+// Responsive
+.if-is-tablet({
+	.grid-generator(@grid-columns, tablet);
+});
+.if-is-desktop({
+	.grid-generator(@grid-columns, desktop);
+});
+
+.row { .clearfix(); }
