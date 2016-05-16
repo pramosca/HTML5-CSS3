@@ -58,6 +58,14 @@ module.exports = function(grunt) {
         dest: 'dist/app.js'
       }
     },
+
+    uglify: {
+      app: {
+        files: {
+          'dist/app.min.js': ['dist/app.js']
+        }
+      }
+    },
     
     watch: {
       styles: {
@@ -81,9 +89,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
   grunt.registerTask('default', ['less:development', 'concat', 'browserSync', 'watch']);
-  grunt.registerTask('production', ['less:production']);
+  grunt.registerTask('production', ['less:production', 'concat', 'uglify']);
   grunt.registerTask('images', ['imagemin']);
 };
