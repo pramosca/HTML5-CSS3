@@ -2,82 +2,105 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
+	<!-- The viewport is the user's visible area of a web page. The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen. -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<title> El Equipo A</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-	<header>
-		<h1>El Equipo A</h1>
-		<nav>
-			<a href="">Inicio</a>
-			<a href="">Quiénes somos</a>
-			<a href="">Qué hacemos</a>
-			<a href="">Contacto</a>
+	<header class="web header">
+		<h1 class="title">El Equipo A</h1>
+		<nav class="main menu">
+			<div class="col-phone-6 col-tablet-3">
+				<a href="">Inicio</a>
+			</div>
+			<div class="col-phone-6 col-tablet-3">
+				<a href="">Quiénes somos</a>
+			</div>
+			<div class="col-phone-6 col-tablet-3">
+				<a href="">Qué hacemos</a>
+			</div>
+			<div class="col-phone-6 col-tablet-3">
+				<a href="">Contacto</a>
+			</div>
 		</nav>
 	</header>
+	<img class="boing-animation" src="dist/img/a_team_20.jpg" alt="El equipo A al completo">
 
-	<section id="quienes-somos">
-		<header>
-			<h2>Quiénes somos</h2>
+	<section id="quienes-somos" class="content section about-us">
+		<header class="header">
+			<h2 class="title">Quiénes somos</h2>
 		</header>
-		<article>
-			<header>
-			<h3>
-				John Hannibal Smith
-				(<cite>George Peppard</cite>)
-			</h3>
-			<h4>Coronel</h4>
-			</header>
-			<figure>
-				<img src="img/smith.png" alt="Foto de Hannibal Smith">
-				<figcaption>
-					John Hannibal Smith
-				</figcaption>
-			</figure>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
-		</article>
-		<article>
-			<header>
-				<h3>
-					Bosco A. M. A. Baracus
-					(<cite>Mr. T</cite>)
-				</h3>
-				<h4>Sargento</h4>
-			</header>
-			<figure>
-				<img src="img/ma.png" alt="Foto de M.A.">
-				<figcaption>Bosco A. M. A. Baracus</figcaption>
-			</figure>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
-		</article>
-		<article>
-			<header>
-				<h3>
-					H. M. Murdock
-					(<cite>Dwight Schultz</cite>)
-				</h3>
-				<h4>Capitán</h4>
-			</header>
-			<figure>
-				<img src="img/murdock.png" alt="Foto de Murdock">
-				<figcaption>H. M. Murdock</figcaption>
-			</figure>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
-		</article>
-		<article>
-			<header>
-				<h3>
-					Templeton Peck
-					(<cite>Dirk Benedict</cite>)
-				</h3>
-				<h4>Teniente</h4>
-			</header>
-			<figure>
-				<img src="img/peck.png" height="389" width="389" alt="Foto de Templeton Peck">
-				<figcaption>Templeton Peck</figcaption>
-			</figure>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
-		</article>
+		<div class="row">
+			<div class="col-phone-12 col-tablet-3">
+				<article class="profile animated shake">
+					<header>
+					<h3 class="name">
+						John Hannibal Smith
+						(<cite class="real-name">George Peppard</cite>)
+					</h3>
+					<h4 class="position">Coronel</h4>
+					</header>
+					<figure class="photo">
+						<img src="dist/img/smith.png" alt="Foto de Hannibal Smith">
+						<figcaption>
+							John Hannibal Smith
+						</figcaption>
+					</figure>
+					<p class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+				</article>
+			</div>
+			<div class="col-phone-12 col-tablet-3">
+				<article class="profile animated flipInY">
+					<header>
+						<h3 class="name">
+							Bosco A. M. A. Baracus
+							(<cite class="real-name">Mr. T</cite>)
+						</h3>
+						<h4 class="position">Sargento</h4>
+					</header>
+					<figure class="photo">
+						<img src="dist/img/ma.png" alt="Foto de M.A.">
+						<figcaption>Bosco A. M. A. Baracus</figcaption>
+					</figure>
+					<p class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+				</article>
+			</div>
+			<div class="col-phone-12 col-tablet-3">
+				<article class="profile animated rollIn">
+					<header>
+						<h3 class="name">
+							H. M. Murdock
+							(<cite class="real-name">Dwight Schultz</cite>)
+						</h3>
+						<h4 class="position">Capitán</h4>
+					</header>
+					<figure class="photo">
+						<img src="dist/img/murdock.png" alt="Foto de Murdock">
+						<figcaption>H. M. Murdock</figcaption>
+					</figure>
+					<p class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+				</article>
+			</div>
+			<div class="col-phone-12 col-tablet-3">
+				<article class="profile animated fadeInLeft">
+					<header>
+						<h3 class="name">
+							Templeton Peck
+							(<cite class="real-name">Dirk Benedict</cite>)
+						</h3>
+						<h4 class="position">Teniente</h4>
+					</header>
+					<figure class="photo">
+						<img src="dist/img/peck.png" alt="Foto de Templeton Peck">
+						<figcaption>Templeton Peck</figcaption>
+					</figure>
+					<p class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+				</article>
+			</div>
+		</div>
 	</section>
 	<section id="que-hacemos">
 		<header>
@@ -89,6 +112,47 @@
 		<p>Si usted tiene algún problema y si los encuentra, quizá pueda contratarlos.</p>
 		<p>Ellos son <strong>El Equipo A</strong>.</p>
 	</section>
+	<section id="contacto">
+		<header>
+			<h2>Contacto</h2>
+		</header>
+		<form id="contact-form" novalidate>
+			<div>
+				<label for="nombreId">Nombre:</label>
+				<input type="text" name="nombre" id="nombreId" placeholder="Nombre" required/>
+			</div>
+			<div>
+				<label for="emailId">Email:</label>
+				<input type="email" name="email" id="emailId" placeholder="email@company.com" required pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+"/>
+			</div>
+			<div>
+				<div>Tipo de misión</div>
+				<label>
+					<input type="radio" id="tipo_mision_1" name="tipo_mision" value="Rescate" required> Rescate</input>
+				</label>
+				<label>
+					<input type="radio" id="tipo_mision_2" name="tipo_mision" value="Ajuste de cuentas" required> Ajuste de cuentas</input>
+				</label>
+				<label>
+					<input type="radio" id="tipo_mision_3" name="tipo_mision" value="Disparos y explosivos sin heridos" required> Disparos y explosivos sin heridos</input>
+				</label>
+				<label>
+					<input type="radio" id="tipo_mision_4" name="tipo_mision" value="Disparos y explosivos con heridos de mentira" required> Disparos y explosivos con heridos de mentira</input>
+				</label>
+			</div>
+			<div>
+				<label for="ejercitoId">Tamaño del ejército enemigo: </label>
+				<input type="number" id="ejercitoId" name="ejercito" min="10" required/>
+			</div>
+			<div>
+				<label for="fechaId">Fecha de trabajo: </label>
+				<input type="date" id="fechaId" name="fecha" required/>
+			<div>
+				<button type="submit">Enviar</button>
+			</div>
+		</form>
+	</section>
+	<script src="js/form.js"></script>
 
 </body>
 </html>

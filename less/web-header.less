@@ -1,0 +1,38 @@
+.web.header {
+
+	.title {
+		font-family: @brand-font-family;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.main.menu {
+		.clearfix();
+		background: @color-menu-bg; 
+		a {
+			text-decoration: none;
+			color: @color-text;
+			display: inline-block;
+			width: 100%;
+			padding: 12px 0px;
+			transition: background 0.25s, color 0.25s linear 0.25s;
+			float: left;
+			text-align: center;
+			&:nth-child(1), &:nth-child(2) {
+				border-bottom: 1px solid darken(@color-menu-bg, 20%);
+			}
+			&:nth-child(1), &:nth-child(3) {
+				border-right: 1px solid darken(@color-menu-bg, 20%);
+				// width: calc(50% - 1px);
+			}
+			&:hover {
+				background: darken(@color-menu-bg, 20%);
+				color: lighten(@color-text, 90%);
+				box-shadow: 0 5px 10px black;
+			}
+			&:active {
+				box-shadow: inset 0 5px 10px black;
+			}
+		}
+	}
+
+}

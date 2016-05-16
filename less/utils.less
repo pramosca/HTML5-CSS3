@@ -1,0 +1,29 @@
+// Mixin itself
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Circle
+.circle {
+	border-radius: 50%;
+}
+
+// Responsive
+.if-is-tablet(@rules) {
+	@media screen and (min-width: @tablet-width) {
+		@rules();
+	}
+}
+
+.if-is-desktop(@rules) {
+	@media screen and (min-width: @desktop-width) {
+		@rules();
+	}
+}

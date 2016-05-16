@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo de JavaScript</title>
+</head>
+<body>
+
+<div id="container" style="padding:20px;background:gold;">
+    <div id="counter">0</div>
+    <button id="start-button">Start</button>
+    <button id="pause-button" disabled>Pause</button>
+    <button id="stop-button" disabled>Stop</button>
+    <button id="reset-button">Reset</button>
+</div>
+
+<script>
+document.getElementById("container").addEventListener("click", function(evt) {
+	var counterValue = document.getElementById("counter").innerHTML;
+	console.log("counterValue before", counterValue);
+	counterValue = parseInt(counterValue);
+	counterValue++;
+	console.log("counterValue after", counterValue);
+	document.getElementById("counter").innerHTML = counterValue;
+});
+
+document.getElementById("reset-button").addEventListener("click", function(evt) {
+	console.log("Reset!");
+	document.getElementById("counter").innerHTML = "0";
+	evt.stopPropagation();
+});
+
+var intervalID = null;
+
+document.getElementById("start-button").addEventListener("click", function(evt) {
+	evt.stopPropagation();
+	if (intervalID == null) {
+		intervalID = setInterval(function() {
+			document.getElementById("container").click(); // simulamos el click
+		}, 500);
+		this.dsabled = true;
+		document.getElementById("pause-button").disabled = false;
+		document.getElementById("stop-button").disabled = false;
+	}
+});
+
+document.getElementById("pause-button").addEventListener("click", function(evt) {
+	evt.stopPropagation();
+	if (intervalID != null) {
+		clearInterval(intervalID);
+		intervalID = null;
+		document.getElementById("stop-button").disabled = true;
+		document.getElementById("start-button").disabled = false;
+
+	}
+});
+
+document.getElementById("stop-button").addEventListener("click", function(evt) {
+	evt.stopPropagation();
+	document.getElementById("pause-button").click();
+	document.getElementById("reset-button").click();
+});
+
+</script>
+
+</body>
+</html>

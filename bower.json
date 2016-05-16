@@ -1,0 +1,22 @@
+{
+  "name": "the-a-team",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "PATRICIA RAMOS CARPINTERO <pramosca@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pramosca/HTML5-CSS3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "jquery": "^2.2.3"
+  }
+}

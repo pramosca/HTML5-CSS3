@@ -12,3 +12,18 @@ Thumbs.db
 
 # Phyton bytecode files
 *.pyc
+
+# node modules
+node_modules/
+
+# bower components
+bower_components/
+
+# grunt generated files
+dist/
+
+# sparrest 
+db/
+
+# sublime staff
+.sublime*
